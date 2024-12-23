@@ -1,0 +1,71 @@
+.todo-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f4f0f5;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .todo-item:hover {
+    background-color: #e0dcec;
+  }
+  
+  .description-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height:90px;
+  }
+  
+  .todo-description {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
+  .todo-date {
+    position:absolute;
+    font-size: 16px;
+    color: #29062d;
+    margin: 0;
+    right: 300px;
+    top: 60px;
+  }
+
+  .todo-category {
+    position:absolute;
+    font-size: 16px;
+    color: #29062d;
+    margin: 0;
+    left: 100px;
+    top: 60px;
+  }
+  
+  .completed .todo-description {
+    text-decoration: line-through;
+    color: #ae1f96;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 450px; 
+  }
+
+  .input-wrapper input[type="checkbox"] {
+    transform: scale(1.5); /* Увеличиваем размер чекбокса */
+    cursor: pointer;
+    accent-color: #5e026a; /* Цвет для выделения */
+  }
+
+  .delete-btn {
+    margin: 12px;
+  }
